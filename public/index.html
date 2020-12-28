@@ -1,0 +1,41 @@
+<html>
+<head>
+  <link rel="stylesheet" href="bootstrap.css"></head>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-10">
+      <div id="chart"></div>
+    </div>
+    <div class="col-md-12 col-lg-2">
+      <div>
+        <h3>Vorlauf</h3>
+        <div class="form-group">
+          <label>Temperatur +20°C</label>
+          <input type="number" class="form-control" id="vorlauf-low" data-update value="30">
+        </div>
+        <div class="form-group">
+          <label>Temperatur -20°C</label>
+          <input type="number" class="form-control" id="vorlauf-high" data-update value="70">
+        </div>
+        <div class="form-group">
+          <label>Temperatur Anhebung/Absenkung</label>
+          <input type="number" class="form-control" id="vorlauf-lift" data-update value="0">
+        </div>
+        <div class="form-group">
+          <label>minimale Temperatur</label>
+          <input type="number" class="form-control" id="vorlauf-min" data-update value="38">
+        </div>
+        <div class="form-group">
+          <label>maximale Temperatur</label>
+          <input type="number" class="form-control" id="vorlauf-max" data-update value="70">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="highcharts.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
